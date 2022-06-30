@@ -41,3 +41,5 @@ PS Z:\front21\JS\Ермаркевич Евгений\homework> git commit -m rea
  1 file changed, 1 insertion(+)
  create mode 100644 "\320\225\320\262\320\263\320\265\320\275\320\270\320\271 \320\225\321\200\320\274\320\260\321\200\320\272\320\265\320\262\320\270\321\207/readme.md"
 PS Z:\front21\JS\Ермаркевич Евгений\homework> 
+
+PS Z:\front21\JS\Ермаркевич Евгений\homework> git push origin master
