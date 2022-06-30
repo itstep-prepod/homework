@@ -9,4 +9,4 @@ if (userNamberOne > userNamberTwe){
     console.log (userNamberTwe);
 } else if (userNamberOne === userNamberTwe){
     console.log('Равные числа');
-} else {console.log('что-то не то, давай сначало');}
+} else {console.log('все фигня, давай сначало');}
