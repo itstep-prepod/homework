@@ -7,7 +7,7 @@ if (user1>user2) {
     alert (`Наибольшее число = ${user1}`);
 } else if (user1 < user2) {
     alert(`Наибольшее число = ${user2}`);
-} else if (user1=user2) {
+} else if (user1===user2) {
     alert('Нет наибольшего числа');
 }
 
