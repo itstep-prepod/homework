@@ -7,6 +7,6 @@ if (userNamberOne > userNamberTwe){
     console.log (userNamberOne);
 } else if (userNamberOne < userNamberTwe) {
     console.log (userNamberTwe);
-} else if (userNamberOne === userNamberTwe)
-    {console.log('Равные числа');
-} else {console.log('что-то новенькое');}
+} else if (userNamberOne === userNamberTwe){
+    console.log('Равные числа');
+} else {console.log('что-то не то, давай сначало');}
