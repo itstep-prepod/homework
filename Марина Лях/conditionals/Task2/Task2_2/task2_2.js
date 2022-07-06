@@ -1,6 +1,6 @@
 // 2. Пользователь вводит номер дня недели, вывести на экран название этого дня
 
-let userNumber = +prompt('enter number of the day of the week');
+// let userNumber = +prompt('enter number of the day of the week');
 
 // if (userNumber === 1) {
 //    console.log('Monday');
@@ -24,6 +24,7 @@ let userNumber = +prompt('enter number of the day of the week');
 //     console.log('Sunday');
 //     alert(`Sunday`);
 // }
+let userNumber = +prompt('enter number of the day of the week');
 switch (userNumber) {
     case 1:
         console.log('Monday');
