@@ -22,3 +22,36 @@ if (userNumber1 > userNumber2 & userNumber1 > userNumber3) {
     console.log('Они равны');
     alert(`Они равны`);
 } 
+// 2. Пользователь вводит номер дня недели,
+// вывести на экран название этого дня.
+let dayNumber = +prompt ('Введи номер дня недели от 1 до 7');
+switch (dayNumber) {
+    case 1:
+        console.log('Понедельник');
+        alert('Понедельник');
+        break;
+    case 2:
+        console.log('Вторник');
+        alert('Вторник');
+        break;
+    case 3:
+        console.log('Среда');
+        alert('Среда');
+        break;
+    case 4:
+        console.log('Четверг');
+        alert('Четверг');
+        break;
+    case 5:
+        console.log('Пятница');
+        alert('Пятница');
+        break;
+    case 6:
+        console.log('Суббота');
+        alert('Суббота');
+        break;
+    case 7:
+        console.log('Воскресенье');
+        alert('Воскресенье');
+        break;
+}
