@@ -57,5 +57,5 @@ switch (userNumber) {
     default:
         console.log('you entered incorrect data, please enter the number 1-7 again');
         alert(`you entered incorrect data, please enter the number 1-7 again`);
-        // break;
+    // break;
 }
