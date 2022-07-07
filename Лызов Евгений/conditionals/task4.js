@@ -25,5 +25,5 @@ if(userGender === 'мужской'){
         alert('Дед');
     }
 }else if(userGender === 'женский'){
-    alert('девушка')
+    alert('девушка');
 }
