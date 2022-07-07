@@ -7,18 +7,18 @@
 //кнопку «отмена» либо крестик, выводилось сообщение «вы не 
 //ввели свой возраст»
 
-let ageHuman = +prompt ('Сколько вам лет?');
+let ageHuman = prompt ('Сколько вам лет?');
 
 if ( ageHuman === null ) {
 alert ('Введите свой взраст пожалуйста')
-} else if ( number (age < 1 )) {
+} else if ( Number (ageHuman) < 1 ) {
  alert ('Вы слишком малы')
-} else if ( number (age < 6 ) ){
-alert ('Привет, малыш');
-} else if ( numder (age < 16 ) ) {
-alert ('Привет, парень');
+} else if ( Number (ageHuman) < 6 ) {
+ alert ('Привет, малыш');
+} else if ( Number (ageHuman) < 16 ) {
+ alert ('Привет, парень');
 } else {
-alert ('Здравствуйте')
+ alert ('Здравствуйте')
 }
 
 
