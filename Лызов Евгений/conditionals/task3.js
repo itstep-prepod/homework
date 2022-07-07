@@ -21,7 +21,9 @@ let ageOfUser = +prompt('Сколько вам лет?');
 
 if(ageOfUser === null || ageOfUser === ''){
     alert('вы не ввели свой возраст');
-} else {
+}else if(isNaN(ageOfUser)){
+    alert('Введите число');
+}else {
     ageOfUser < 14 ? alert('Привет малыш') : ageOfUser < 16 ?  alert('Привет парень') : alert('Здрвствнйте');
 }
 
