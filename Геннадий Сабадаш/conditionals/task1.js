@@ -12,13 +12,13 @@
 // let masege = (age < 6) ? "привет малыш" : (age < 16) ? "привет парень" : "Здравствуйте!";
 // alert (masege); 
 // ---------------------------------------------------------
-// 3.3
-let YouAge = prompt("Сколько вам лет?");
-if (YouAge === null){
+// 3
+let youAge = prompt("Сколько вам лет?");
+if (youAge === null){
     alert("не ввели возраст"); 
-} else if (Number(YouAge) < 6){
+} else if (Number(youAge) < 6){
     alert("привет малыш");
-} else if (Number(YouAge) < 16){
+} else if (Number(youAge) < 16){
     alert("привет парень");
 } else {
     alert("Здравствуй");
