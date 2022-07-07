@@ -3,18 +3,17 @@
 
 let kakoypol = prompt ('Ваш пол муж или жен?');
 
-    if (kakoypol === 'муж') {
-        let kakoyvozrast = prompt ('Ваш возраст?');
-            if (kakoyvozrast >= 0 && kakoyvozrast < 14) {
-                alert ('подросток');
-                } else if (kakoyvozrast >= 14 && kakoyvozrast < 20) {
-                    alert ('юноша');
-                    } else if (kakoyvozrast >= 20 && kakoyvozrast < 60) {
-                        alert ('молодой человек');
-                        } else if (kakoyvozrast >= 60 && kakoyvozrast < 100) {
-                            alert ('дед');
-                            } else {alert ('что-то не то');}
-    }   else if (kakoypol === 'жен'){
-        alert ('девушка!');
-        } 
-            else {alert ('New gender');}
+if (kakoypol === 'муж') {
+    let kakoyvozrast = prompt ('Ваш возраст?');
+if (kakoyvozrast >= 0 && kakoyvozrast < 14) {
+    alert ('подросток');
+} else if (kakoyvozrast >= 14 && kakoyvozrast < 20) {
+    alert ('юноша');
+} else if (kakoyvozrast >= 20 && kakoyvozrast < 60) {
+    alert ('молодой человек');
+} else if (kakoyvozrast >= 60 && kakoyvozrast < 100) {
+    alert ('дед');
+} else {alert ('что-то не то');}
+}   else if (kakoypol === 'жен'){
+    alert ('девушка!');
+    } else {alert ('New gender');}
