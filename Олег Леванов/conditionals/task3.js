@@ -9,9 +9,9 @@
 // let age = Number(prompt('Сколько вам лет?'));
 // let ageGroup;
 // if (age <= 16) {
-//     age <= 3 ? ageGroup = 'Вы малыш.' : ageGroup = 'Вы подросток.';
+//     ageGroup = age <= 3 ? 'Вы малыш.' : 'Вы подросток.';
 // } else if (age < 120) {
-//     age >= 60 ? ageGroup = 'Вы пенсионер.' : ageGroup = 'Вы взрослый.';
+//     ageGroup = age >= 60 ? 'Вы пенсионер.' : 'Вы взрослый.';
 // } else {
 //     ageGroup = 'Некорректный ввод возраста!!!';
 // }
@@ -23,14 +23,14 @@
 
 let inputAge = prompt('Сколько вам лет?');
 let age = Number(inputAge);
-let ageGroup
+let ageGroup;
 if (inputAge === null || inputAge === '') {
     ageGroup = 'Надо было вести число а не пустую строку.';
 } else {
     if (age <= 16) {
-        age <= 3 ? ageGroup = 'Вы малыш.' : ageGroup = 'Вы подросток.';
+        ageGroup = age <= 3 ? 'Вы малыш.' : 'Вы подросток.';
     } else if (age < 120) {
-        age >= 60 ? ageGroup = 'Вы пенсионер.' : ageGroup = 'Вы взрослый.';
+        ageGroup = age >= 60 ? 'Вы пенсионер.' : 'Вы взрослый.';
     } else {
         ageGroup = 'Некорректный ввод возраста!!!';
     }
