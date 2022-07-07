@@ -29,5 +29,5 @@ switch (genderUser){
             };
         break;
     default:
-    alert('Такого пола не существует');
+        alert('Такого пола не существует');
 };
