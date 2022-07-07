@@ -6,13 +6,15 @@
 // 3. Измените программу так, чтобы когда пользователь нажимал 
 // кнопку «отмена» либо крестик, выводилось сообщение «вы не 
 // ввели свой возраст».
- let age = +prompt('how old are you?');
- let newAge = age === 0 ? ('вы не ввели свой возраст'):
-              age < 6 ? 'Привет, малыш' :
-              age < 16 ? 'Привет, парень' : 
-              'здравствуйте';
- console.log (newAge);
- alert(newAge);
+ let age = prompt('how old are you?');
+
+ if (age === null || age === ''){
+ console.log('вы не ввели свой возраст');
+ } else {
+         console.log( +age < 6 ? 'Привет, малыш' :
+          +age < 16 ? 'Привет, парень' : 
+              'здравствуйте');
+ }
 // let age = +prompt('how old are you?');
 // if (age <6) {
 //     console.log('Привет, малыш');
