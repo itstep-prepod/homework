@@ -17,8 +17,10 @@ let messageForUser = ageUser < 6 ? alert('Привет, малыш') : ageUser <
 // ввели свой возраст»
 
 let ageOfUser = prompt('Сколько вам лет?');
-if (ageOfUser === null || ageOfUser === ''){
+if (ageOfUser === null || ageOfUser === '') {
     alert('Вы не ввели свой возраст!');
-} else{
+} else if (isNaN(+ageOfUser)) {
+     alert('Введите ЧИСЛО');
+} else {
     +ageOfUser < 6 ? alert('Привет, малыш') : +ageOfUser < 16 ? alert('Привет, парень') : alert('Здравствуйте');
-}
+};
