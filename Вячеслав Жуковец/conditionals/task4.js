@@ -10,18 +10,23 @@
 // от указанного возраста всегда выводится
 // «девушка».
 
-let gender = prompt ('Введите ваш пол М/Ж!');
-let age;
-if (gender === 'Ж'){
-    alert ('Девушка');
-}else if (gender === ('М') || gender === ('м') && (age >=0 && age <=14) ) {
-    age = +prompt ('Введите ваш возраст!');
-    alert ('Подросток!');
-} else if (gender === ('М') || gender === ('м') && (age >=15 && age <=20)){
-    alert ('Юноша!');
-} else if (gender === ('М') || gender === ('м') && (age >=21 && age <=60)){
-    alert ('Молодой человек!');
-} else if (gender === ('М') || gender === ('м') && (age >=61 && age <=100)){
-    alert ('Дед');
+let gender = prompt ('Введите ваш пол М(м)/Ж(ж)!');
+let age = null;
+if (gender === 'Ж' || gender === 'ж'){
+    alert ('Девушка!');
+} else if (gender === ('М') || gender === ('м')){
+    age = (prompt ('Введите ваш возраст!')).trim();
+    if (age === null || age === '' || isNaN(age)){
+        alert ('Не верно введён возраст!');
+    }else if (age >=0 && age <=14){
+        alert ('Подросток!');  
+    }else if (age >=15 && age <=20){
+        alert ('Юноша!');
+    }else if (age >=21 && age <=60){
+        alert ('Молодой человек!');
+    }else if (age >=61 && age <=100){
+        alert ('Дед!');
+    }
+}else {
+    alert ('Не верно введён пол!');
 }
-    
