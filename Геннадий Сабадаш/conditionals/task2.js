@@ -20,30 +20,30 @@
 // 2. Пользователь вводит номер дня недели,
 // вывести на экран название этого дня.
 
-const dayWeek = +prompt("введите число дня недели");
-switch (dayWeek){
-    case 1:
-        alert("Понедельник");
-        break;
-    case 2:
-        alert("вторник");
-        break;
-    case 3:
-        alert("среда");
-        break;
-    case 4:
-        alert("четверг");
-        break;
-    case 5:
-        alert("пятница");
-        break;
-    case 6:
-        alert("суббота");
-        break;
-    case 7:
-        alert("воскресенье");
-        break;
-    default: 
-        alert("я незнаю такого дня недели")
-}
+// const dayWeek = +prompt("введите число дня недели");
+// switch (dayWeek){
+//     case 1:
+//         alert("Понедельник");
+//         break;
+//     case 2:
+//         alert("вторник");
+//         break;
+//     case 3:
+//         alert("среда");
+//         break;
+//     case 4:
+//         alert("четверг");
+//         break;
+//     case 5:
+//         alert("пятница");
+//         break;
+//     case 6:
+//         alert("суббота");
+//         break;
+//     case 7:
+//         alert("воскресенье");
+//         break;
+//     default: 
+//         alert("я незнаю такого дня недели")
+// }
 
