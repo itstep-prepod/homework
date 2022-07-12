@@ -1,13 +1,10 @@
-// 1. Пользователь вводит два числа, вывести в консоль наибольшее из них.
+// 1. Переписать из if в тернарный оператор ?
 
 
+let age = 14;
 
-let userNumberOne = +prompt ('Введите число');
+let message = (age < 6) ? 'Привет, малыш!' :
+  (age < 16) ? 'Привет, парень!' :
+  'Здравствуйте!';
 
-let userNumberTwo = +prompt ('Введите ещё число');
-
-if (userNumberOne > userNumberTwo) {
- console.log(userNumberOne)
- } else if (userNumberOne === userNumberTwo){
- console.log(userNumberTwo)
- } else {console.log(userNumberTwo)};
+alert( message );
