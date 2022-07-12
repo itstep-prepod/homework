@@ -15,6 +15,7 @@
           +age < 16 ? 'Привет, парень' : 
               'здравствуйте');
  }
+ 
 // let age = +prompt('how old are you?');
 // if (age <6) {
 //     console.log('Привет, малыш');
