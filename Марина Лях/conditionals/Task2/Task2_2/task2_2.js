@@ -24,6 +24,7 @@
 //     console.log('Sunday');
 //     alert(`Sunday`);
 // }
+
 let userNumber = +prompt('enter number of the day of the week');
 switch (userNumber) {
     case 1:
