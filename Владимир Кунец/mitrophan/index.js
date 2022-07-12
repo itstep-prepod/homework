@@ -11,11 +11,11 @@ let Phedor = +prompt('Введите возраст Федора');
 if (Phedor > Mitrophan) {
     let PhedorWin = Phedor - Mitrophan;
     alert ('Федот старше Митрофана на ' +PhedorWin);
-} else if (Phedor < Mitrophan) {
+} else if (Mitrophan > Phedor) {
     let MitrophanWin = Mitrophan - Phedor;
-    alert ('Митрофан старше Федота на ' +PhedorWin);
+    alert ('Митрофан старше Федота на ' +MitrophanWin);
 } else if (Phedor === Mitrophan){
     alert ('Федот и Митрофан одного возраста');
 } else {
     alert ('Errore 404');
-}
+} 
