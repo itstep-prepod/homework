@@ -24,8 +24,9 @@ if (youOld > 0 && youOld < 14 ){
     alert('дед');    
 }
 } else if (youSex === 'жен'){
-   alert('девушка');}
-else {alert('непонятно кто');
+    alert('девушка');}
+else {
+    alert('непонятно кто');
 }
 
 
