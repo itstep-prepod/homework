@@ -13,7 +13,7 @@
 //     alert (userNamber3);
 // } else if (userNamber1 === userNamber2 && userNamber1 === userNamber3 && userNamber2 === userNamber3){
 //     alert ("числа равны");
-// }else {
+// } else {
 //     alert ("нет большего числа!")
 // }
     
