@@ -14,18 +14,18 @@ let youSex = prompt("какой Ваш пол ЖЕН или МУЖ");
 
 if (youSex === 'муж'){
     let youOld = prompt("какой у вас возраст?");
-if (youOld > 0 && youOld < 14 ){
-    alert("подросток"); 
-}else if (youOld > 14 && youOld < 20){
-    alert("юноша");
-}else if (youOld > 20 && youOld < 60 ){
-    alert("молодой человек");
-}else if (youOld > 60 && youOld < 100 ){
-    alert('дед');    
-}
+    if (youOld > 0 && youOld < 14 ){
+        alert("подросток"); 
+    } else if (youOld > 14 && youOld < 20){
+        alert("юноша");
+    } else if (youOld > 20 && youOld < 60 ){
+        alert("молодой человек");
+    } else if (youOld > 60 && youOld < 100 ){
+        alert('дед');    
+    }
 } else if (youSex === 'жен'){
-    alert('девушка');}
-else {
+    alert('девушка');
+} else {
     alert('непонятно кто');
 }
 
