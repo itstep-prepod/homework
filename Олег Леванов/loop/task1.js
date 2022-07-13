@@ -153,55 +153,119 @@
 // n чисел введенных пользователем. Ввод чисел прекращается когда
 // нажали "отмена", после чего выводится среднее арифметическое
 
-let inputNumber = '';
-let isWork = false;
-let isStop = false;
-let number = 0;
-let count = 0;
-let sum = 0;
-while (true) {
+// let inputNumber = '';
+// let isWork = false;
+// let isStop = false;
+// let number = 0;
+// let count = 0;
+// let sum = 0;
+// while (true) {
 
-    inputNumber = '\0';
-    isWork = false;
-    number = 0;
-    do {
+//     inputNumber = '\0';
+//     isWork = false;
+//     number = 0;
+//     do {
 
-        inputNumber = prompt('Вводите числа чтоб получить среднее арифметическое\nДля завершения нажмите кнопку отмена');
-        if (inputNumber === null) {
-            isStop = true;
-            break;
-        }
+//         inputNumber = prompt('Вводите числа чтоб получить среднее арифметическое\nДля завершения нажмите кнопку отмена');
+//         if (inputNumber === null) {
+//             isStop = true;
+//             break;
+//         }
 
-        if (inputNumber === '') {
-            console.log('Надо было вести число а не пустую строку.\nЕсли хотите выйте нажмите отмена.');
-        } else {
+//         if (inputNumber === '') {
+//             console.log('Надо было вести число а не пустую строку.\nЕсли хотите выйте нажмите отмена.');
+//         } else {
 
-            number = Number(inputNumber);
-            if (isNaN(number)) {
-                console.log('Введено не число!\nНадо число.');
-            } else if (!Number.isSafeInteger(number)) {
-                console.log('Переданное значение НЕ является безопасным целым числом.');
-            } else {
-                isWork = true;
-            }
-        }
+//             number = Number(inputNumber);
+//             if (isNaN(number)) {
+//                 console.log('Введено не число!\nНадо число.');
+//             } else if (!Number.isSafeInteger(number)) {
+//                 console.log('Переданное значение НЕ является безопасным целым числом.');
+//             } else {
+//                 isWork = true;
+//             }
+//         }
 
-    } while (isWork === false);
+//     } while (isWork === false);
 
-    if (isStop) {
-        break;
-    }
+//     if (isStop) {
+//         break;
+//     }
 
-    count++;
-    sum += number;
-}
+//     count++;
+//     sum += number;
+// }
 
-if (sum === 0) {
-    console.log('Вы вышли из программы без расчетов.');
-} else {
-    console.log('Среднее арифметическое значение будет ' + sum / count);
-}
+// if (sum === 0) {
+//     console.log('Вы вышли из программы без расчетов.');
+// } else {
+//     console.log('Среднее арифметическое значение будет ' + sum / count);
+// }
 
 // 5. пользователь вводит числа n и m, вывести в консоль
 // квадраты всех чисел от n до m
+
+let inputNumber = '\0';
+let isWork = false;
+let number = 0;
+do {
+
+    inputNumber = prompt("Введите первое число n.");
+
+    if (inputNumber === null || inputNumber === '') {
+        console.log('Надо было вести число а не пустую строку.');
+    } else {
+
+        number = Number(inputNumber);
+        if (isNaN(number)) {
+            console.log('Введено не число!\nНадо число.');
+        } else if (!Number.isSafeInteger(number)) {
+            console.log('Переданное значение НЕ является безопасным целым числом.');
+        } else {
+            isWork = true;
+        }
+    }
+
+} while (isWork === false);
+let onNum = number;
+
+inputNumber = '\0';
+isWork = false;
+number = 0;
+do {
+
+    inputNumber = prompt("Введите второе число m.");
+
+    if (inputNumber === null || inputNumber === '') {
+        console.log('Надо было вести число а не пустую строку.');
+    } else {
+
+        number = Number(inputNumber);
+        if (isNaN(number)) {
+            console.log('Введено не число!\nНадо число.');
+        } else if (!Number.isSafeInteger(number)) {
+            console.log('Переданное значение НЕ является безопасным целым числом.');
+        } else {
+            isWork = true;
+        }
+    }
+
+} while (isWork === false);
+let toNum = number;
+
+let temp = 0;
+if (onNum > toNum) {
+    temp = toNum;
+    toNum = onNum;
+    onNum = temp;
+}
+
+if (onNum === toNum) {
+    console.log('Давай ПРИВЕТ :)');
+    console.log(Math.pow(onNum, 2));
+}
+
+for (let i = onNum; i < toNum; i++) {
+    console.log(`Kорень ${i} = ${Math.pow(i, 2)}`);
+}
 
