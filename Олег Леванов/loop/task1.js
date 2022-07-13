@@ -266,6 +266,6 @@ if (onNum === toNum) {
 }
 
 for (let i = onNum; i < toNum; i++) {
-    console.log(`Kорень ${i} = ${Math.pow(i, 2)}`);
+    console.log(`Квадрат ${i} = ${Math.pow(i, 2)}`);
 }
 
