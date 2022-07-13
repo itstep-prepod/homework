@@ -29,11 +29,9 @@ if (inputAgeFedot === null || inputAgeFedot === ''
             alert('Кто то врет! Слишком большой возраст.');
         } else {
             if (ageFedot > ageMitrofan) {
-                differentAge = ageFedot - ageMitrofan;
-                alert(`Федот старше Митрофана на ${differentAge}`);
+                alert(`Федот старше Митрофана на ${ageFedot - ageMitrofan}`);
             } else if (ageMitrofan > ageFedot) {
-                differentAge = ageMitrofan - ageFedot;
-                alert(`Митрофан старше Федота на ${differentAge}`);
+                alert(`Митрофан старше Федота на ${ageMitrofan - ageFedot}`);
             } else {
                 alert('Федот и Митрофан одного возраста');
             }
