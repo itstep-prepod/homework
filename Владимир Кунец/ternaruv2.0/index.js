@@ -37,8 +37,8 @@ let howoldareyou = prompt('Сколько вам лет?');
 if (howoldareyou === null) {
     alert ('вы не ввели свой возраст');
 } else {
-let massage = (+howoldareyou < 6) ? 'Привет, малыш' :
+    let massage = (+howoldareyou < 6) ? 'Привет, малыш' :
     (+howoldareyou < 16) ? 'Привет, парень' :
     'Здравствуйте';
-alert (massage);
+    alert (massage);
 }
