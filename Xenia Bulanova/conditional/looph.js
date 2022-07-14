@@ -84,10 +84,10 @@
 // квадраты всех чисел от n до m
 
 
-let nNumber = +prompt('Please enter a number');
-let mNumber = +prompt('Please enter a number');
+// let nNumber = +prompt('Please enter a number');
+// let mNumber = +prompt('Please enter a number');
 
-for (let i = nNumber; i <= mNumber; i++) {
-  console.log(i**2);
-}
+// for (let i = nNumber; i <= mNumber; i++) {
+//   console.log(i**2);
+// }
 
