@@ -11,18 +11,17 @@
 // «девушка»
 
 let sex = prompt('enter your sex');
-
 if (sex === 'мужской') {
     let age = +prompt('enter your age');
-   if (age > 0 && age <= 14) {
-    console.log('подросток');
-} else if (age > 14 && age <= 20) {
-    console.log('юноша');
-} else if (age > 20 && age <= 60) {
-    console.log('молодой человек');
-} else if (age > 60 && age <= 100) {
-    console.log('дед');
-}
+    if (age > 0 && age <= 14) {
+        console.log('подросток');
+    } else if (age > 14 && age <= 20) {
+        console.log('юноша');
+    } else if (age > 20 && age <= 60) {
+        console.log('молодой человек');
+    } else if (age > 60 && age <= 100) {
+        console.log('дед');
+    }
 } else if (sex === 'женский'){
     let age = +prompt('enter your age');
     console.log('девушка');
