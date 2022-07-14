@@ -253,18 +253,6 @@ do {
 } while (isWork === false);
 let toNum = number;
 
-let temp = 0;
-if (onNum > toNum) {
-    temp = toNum;
-    toNum = onNum;
-    onNum = temp;
-}
-
-if (onNum === toNum) {
-    console.log('Давай ПРИВЕТ :)');
-    console.log(Math.pow(onNum, 2));
-}
-
 for (let i = onNum; i < toNum; i++) {
     console.log(`Квадрат ${i} = ${Math.pow(i, 2)}`);
 }
