@@ -46,19 +46,29 @@
 // n чисел введенных пользователем. Ввод чисел прекращается когда
 // нажали "отмена", после чего выводится среднее арифметическое
 
-let userNumber = 0;
-let sum = 0;
+// let userNumber = 0;
+// let sum = 0;
 
-for (let i = 0; ; i++) {
+// for (let i = 0; ; i++) {
 
-    userNumber = prompt (`Введи число`);
+//     userNumber = prompt (`Введи число`);
 
-    sum += +userNumber;
+//     sum += +userNumber;
 
-    if (userNumber ===  null || userNumber === ``) {
-        console.log (sum / i);
-        break;
-    } 
+//     if (userNumber ===  null || userNumber === ``) {
+//         console.log (sum / i);
+//         break;
+//     } 
+// }
+
+// 5. пользователь вводит числа n и m, вывести в консоль
+// квадраты всех чисел от n до m
+
+let userNumber1 = +prompt ('Введите число n');
+let userNumber2 = +prompt ('Введите число m');
+let square = 0;
+for (userNumber1; userNumber1 <= userNumber2; userNumber1++) {
+    square = Math.pow (userNumber1, 2);
+    console.log (square);
 }
-
 
