@@ -1,4 +1,4 @@
-// . Напишите программу в которой пользователя
+//  Напишите программу в которой пользователя
 // спрашивают его пол. Если был выбран мужской
 // пол, то пользователя просят ввести возраст (в
 // программе используйте 2 prompt’a один для пола,
@@ -10,27 +10,19 @@
 // от указанного возраста всегда выводится
 // «девушка»
 
-let youSex = prompt("какой Ваш пол ЖЕН или МУЖ");
-
-if (youSex === 'муж'){
-    let youOld = prompt("какой у вас возраст?");
-    if (youOld > 0 && youOld < 14 ){
-        alert("подросток"); 
-    } else if (youOld > 14 && youOld < 20){
-        alert("юноша");
-    } else if (youOld > 20 && youOld < 60 ){
-        alert("молодой человек");
-    } else if (youOld > 60 && youOld < 100 ){
-        alert('дед');    
+let sex = prompt('enter your sex');
+if (sex === 'мужской') {
+    let age = +prompt('enter your age');
+    if (age > 0 && age <= 14) {
+        console.log('подросток');
+    } else if (age > 14 && age <= 20) {
+        console.log('юноша');
+    } else if (age > 20 && age <= 60) {
+        console.log('молодой человек');
+    } else if (age > 60 && age <= 100) {
+        console.log('дед');
     }
-} else if (youSex === 'жен'){
-    alert('девушка');
-} else {
-    alert('непонятно кто');
+} else if (sex === 'женский'){
+    let age = +prompt('enter your age');
+    console.log('девушка');
 }
-
-
-   
-    
-
-
