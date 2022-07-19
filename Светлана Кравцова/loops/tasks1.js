@@ -19,11 +19,12 @@
 // (n всегда положительное) + проверить число n на число
 
 // let n = +prompt("введите число любое положительное число");
+// let sum = 0;
 // if (isNaN(n)) {
 //     console.log("введите число в правильном формате");
 // } else {
 //     for (let i = 1; i <= n; i++) {
-//         let sum = i*(i+1)/2;  
+//         sum += i;  
 //         console.log(sum);        
 //     }
 // }
@@ -75,23 +76,26 @@
 // let num = 0;
 // let average  = 0;
 // for (let i = 0; ; i++) {
-//     let num = +prompt("введите числа");
-//     amount += num;
-//     if (num === 0) {    
+//     let num = prompt("введите числа");
+//     amount += Number(num);
+//     if (+num === 0) {    
 //         average  = amount / i;   
 //         console.log(average);
+//         if (num === null){             
+//             break  
+//         }
 //         break
-//     } else if (isNaN(num)){
+//     } else if (isNaN(+num)){
 //         console.log("Вы ввели числа в неправильном формате");      
 //         break  
-//     }
+//     } 
 // }
 
 // 5. пользователь вводит числа n и m, вывести в консоль
 // квадраты всех чисел от n до m
 
-let n = +prompt("введите число 1");
-let m = +prompt("введите число 2");
-for (let i = n; i <= m; i++) {   
-    console.log(Math.pow(i,2));
-}
+// let n = +prompt("введите число 1");
+// let m = +prompt("введите число 2");
+// for (let i = n; i <= m; i++) {   
+//     console.log(Math.pow(i,2));
+// }
