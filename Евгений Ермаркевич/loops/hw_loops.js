@@ -63,19 +63,38 @@
 // нажали "отмена", после чего выводится среднее арифметическое
 
 
-let userNumber;
-let sumNumber = 0;
-let average;
+// let userNumber;
+// let sumNumber = 0;
+// let average;
 
-for (let i = 0; ; i++) {
-    userNumber = prompt( 'Введите число' );
-    if (isNaN(+userNumber)) {
-        alert( 'Вводите числа цифрами');
-        break;
-    } else if (userNumber === null) {
-       average = sumNumber/i;
-       console.log(average);
-        break;  
-    } else {sumNumber = +userNumber + sumNumber;
+// for (let i = 0; ; i++) {
+//     userNumber = prompt( 'Введите число' );
+//     if (isNaN(+userNumber)) {
+//         alert( 'Вводите числа цифрами');
+//         break;
+//     } else if (userNumber === null) {
+//        average = sumNumber/i;
+//        console.log(average);
+//         break;  
+//     } else {sumNumber = +userNumber + sumNumber;
+//     }
+// }
+
+
+// 5. пользователь вводит числа n и m, вывести в консоль
+// квадраты всех чисел от n до m
+
+let userNumN = +prompt( 'Введите число' );
+let userNumM = +prompt( 'Введите число' );
+let squareNum;
+
+if (userNumN > userNumM) {
+    for ( ; userNumN >= userNumM; userNumN--) {
+        squareNum = userNumN**2;
+        console.log(squareNum);        
+    }    
+    } else { for ( ; userNumN <= userNumM; userNumN++) {
+        squareNum = userNumN**2;
+        console.log(squareNum);
     }
 }
