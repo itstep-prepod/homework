@@ -64,11 +64,39 @@
 // 5. пользователь вводит числа n и m, вывести в консоль
 // квадраты всех чисел от n до m
 
-let userNumber1 = +prompt ('Введите число n');
-let userNumber2 = +prompt ('Введите число m');
-let square = 0;
-for (userNumber1; userNumber1 <= userNumber2; userNumber1++) {
-    square = Math.pow (userNumber1, 2);
-    console.log (square);
-}
+// let userNumber1 = +prompt ('Введите число n');
+// let userNumber2 = +prompt ('Введите число m');
+// let square = 0;
+// for (userNumber1; userNumber1 <= userNumber2; userNumber1++) {
+//     square = Math.pow (userNumber1, 2);
+//     console.log (square);
+// }
 
+// 6. написать игру. Под диваном живет 100 хомячков, пользователь
+// не знает сколько их. Задача пользователя доставать из под дивана хомячков 
+// до тех пор, пока их там не останется.
+// В конце игры выводим количество попыток за которое пользователь достал
+// всех хомячков.
+// Если пользователь нажмет "отмена" игра должна прекратиться досрочно
+// с выводом сообщения чз алерт.
+// Если пользователь пытается достать хомячков больше чем их осталось под 
+// диваном то вывести алертом сообщение "нет столько хомячков".
+
+let humsters = 100;
+let counter = 0;
+for (humsters; humsters > 0; ) {
+    let attempt = prompt ('достань хомяков');
+    humsters -= attempt;
+    counter += 1;
+    if (attempt > 100) {
+        alert ('столько нет');
+        humsters = 100;
+    } else if (humsters === 0) {
+        alert (`вы победили, попыток: ${counter}`);
+    } else if (humsters < 0) {
+        humsters = 100;
+    } else if (attempt === null || attempt === "") {
+        alert ('вы закончили игру');
+        break;
+    }
+}
