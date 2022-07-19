@@ -40,20 +40,42 @@
 // отрицательных: 4
 // нулей: 1
 
-let countNumber = +prompt( 'Введите количество чисел' );
-let positiveNumber = 0;
-let negativeNumber = 0;
-let zero = 0;
+// let countNumber = +prompt( 'Введите количество чисел' );
+// let positiveNumber = 0;
+// let negativeNumber = 0;
+// let zero = 0;
+// let userNumber;
+
+// for (let i = 0; i < countNumber; i++) {
+//     userNumber = +prompt( 'Введите число' );
+//         if (userNumber > 0) { positiveNumber++;            
+//         } else if (userNumber < 0) { negativeNumber++;            
+//         } else { zero++; }
+// }         
+
+// console.log( `положительных: ${positiveNumber}
+// отрицательных: ${negativeNumber}
+// нулей: ${zero}`);
+
+
+// 4. написать программу которая выводит среднее арифметическое 
+// n чисел введенных пользователем. Ввод чисел прекращается когда
+// нажали "отмена", после чего выводится среднее арифметическое
+
+
 let userNumber;
+let sumNumber = 0;
+let average;
 
-for (let i = 0; i < countNumber; i++) {
-    userNumber = +prompt( 'Введите число' );
-        if (userNumber > 0) { positiveNumber++;            
-        } else if (userNumber < 0) { negativeNumber++;            
-        } else { zero++; }
-}         
-
-console.log( `положительных: ${positiveNumber}
-отрицательных: ${negativeNumber}
-нулей: ${zero}`);
-
+for (let i = 0; ; i++) {
+    userNumber = prompt( 'Введите число' );
+    if (isNaN(+userNumber)) {
+        alert( 'Вводите числа цифрами');
+        break;
+    } else if (userNumber === null) {
+       average = sumNumber/i;
+       console.log(average);
+        break;  
+    } else {sumNumber = +userNumber + sumNumber;
+    }
+}
