@@ -125,7 +125,7 @@
 
 // for (let i = 0; i < arr.length; i++) {
 //     arr[i] = Math.floor(Math.random() * 100);
-//     if (i % 2 === 0) {
+//     if (arr[i] % 2 === 0) {
 //         if (arr[i] > maxEvenElement) {
 //             maxEvenElement = arr[i]
 //         }
