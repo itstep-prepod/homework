@@ -99,7 +99,7 @@ for (let i = 5; i <= 15; i++) {
 for (let i = 25; i >= 7; i--) {
    console.log(i);
 }
-0.2 пользователь вводит числа 5 раз, вывести в консоль сумму этих чисел
+// 0.2 пользователь вводит числа 5 раз, вывести в консоль сумму этих чисел
 let summ = 0;
 let userInput;
 
@@ -166,10 +166,10 @@ for (currentYear; currentYear <= 2030; currentYear++) {
 // в 2022 было 22 год
 
 let yearOfBirth = +prompt('Введите год рождения');
-let currentYear = 2022;
-let userAge = 1;
+let Year = 2022;
+let ageOfUser = 1;
 
-for (yearOfBirth; yearOfBirth < currentYear; yearOfBirth++) {
-   console.log(`в ${yearOfBirth + 1} вам было ${userAge} год`);
-   userAge++;
+for (yearOfBirth; yearOfBirth < Year; yearOfBirth++) {
+   console.log(`в ${yearOfBirth + 1} вам было ${ageOfUser} год`);
+   ageOfUser++;
 }
