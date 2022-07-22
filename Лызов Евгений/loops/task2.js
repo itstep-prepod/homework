@@ -4,22 +4,22 @@
 // сообщение об ошибке
 // если все 5 чисел были больше предыдущего вывести алертом сообщение об суспехе\
 
-// let prevNumber = +prompt('Введите число!');
-// let currentNumber;
-// for (let i = 0; i <= 4; i++) {
+let prevNumber = +prompt('Введите число!');
+let currentNumber;
+for (let i = 0; i <= 4; i++) {
 
-//    if (i === 4) {
-//       alert('УСПЕХ!')
-//    }
-//    currentNumber = +prompt('Введите число больше предыдущего');
+   if (i === 4) {
+      alert('УСПЕХ!');
+   }
+   currentNumber = +prompt('Введите число больше предыдущего');
 
-//    if (prevNumber > currentNumber || prevNumber === currentNumber) {
-//       alert("АШЫПКА!");
-//       break;
-//    }
-//    prevNumber = currentNumber;
+   if (prevNumber > currentNumber || prevNumber === currentNumber) {
+      alert("АШЫПКА!");
+      break;
+   }
+   prevNumber = currentNumber;
 
-// }
+}
 
 
 
@@ -29,14 +29,14 @@
 // вывод в консоли "зазазаика"
 // зазазазазаика
 
-// let countRepeat = +prompt('Введите количество раз');
-// let string = ''; 
+let countRepeat = +prompt('Введите количество раз');
+let string = '';
 
-// for (i = 0; i < countRepeat; i++) {
-//    string += 'za'
-// }
+for (i = 0; i < countRepeat; i++) {
+   string += 'za';
+}
 
-// console.log(`${string}ika`);
+console.log(`${string}ika`);
 
 // 3. написать игру. Под диваном живет 100 хомячков, пользователь
 // не знает сколько их. Задача пользователя доставать из под дивана хомячков
@@ -88,14 +88,56 @@ for (let i = 0; i <= countOfHamsters; i++) {
 // при ничьей, очко никому не засчитываем
 
 
+
 // 0. вывести в консоль числа от 5 до 15
+
+for (let i = 5; i <= 15; i++) {
+   console.log(i);
+}
 // 0.1 вывести в консоль числа от 25 до 7
-// 0.2 пользователь вводит числа 5 раз, вывести в консоль сумму этих чисел
+
+for (let i = 25; i >= 7; i--) {
+   console.log(i);
+}
+0.2 пользователь вводит числа 5 раз, вывести в консоль сумму этих чисел
+let summ = 0;
+let userInput;
+
+for (let i = 0; i < 5; i++) {
+   userInput = +prompt('enter a number');
+   summ += userInput;
+}
+console.log(summ);
+
 // 1. пользователь вводит число n (положительное), вывести на экран
 // все четные числа от 1 до n
+
+let userEnter = +prompt('Введите положительное число');
+
+for (let i = 1; i <= userEnter; i++) {
+   if (i % 2 === 0) {
+      alert(i)
+   }
+}
+
 // 2. создать переменную password = '1234' (правильный пароль)
 // просим пользователя ввести пароль, до тех пор пока он не введет правильный
 // если пользователь нажал "отмена" прекратить ввод
+
+let password = '1234';
+let userPassword;
+
+for (; ;) {
+   userPassword = prompt('Введите пароль');
+
+   if (userPassword === null) {
+      break;
+   } else if (password === userPassword) {
+      alert('УСПЕХ!!!');
+      break;
+   }
+}
+
 // 3. пользователь вводит свой текущий возраст,
 // вывести в консоль сколько лет ему будут каждый год до 2030 года
 // пример: пользователь вводит 14
@@ -104,6 +146,17 @@ for (let i = 0; i <= countOfHamsters; i++) {
 // в 2025 году будет 17
 // ....
 // в 2030 году будет 23
+
+let userAge = +prompt('Введите текущий возраст');
+let currentYear = 2022;
+
+for (currentYear; currentYear <= 2030; currentYear++) {
+
+   console.log(`в ${currentYear} году будет ${userAge}`);
+
+   userAge++;
+}
+
 // 4. пользователь вводит год своего рождения
 // вывести в консоль сколько лет ему было каждый год до текущего
 // пример: пользователь водит 2000
@@ -111,3 +164,12 @@ for (let i = 0; i <= countOfHamsters; i++) {
 // в 2002 было 2 год
 // ...
 // в 2022 было 22 год
+
+let yearOfBirth = +prompt('Введите год рождения');
+let currentYear = 2022;
+let userAge = 1;
+
+for (yearOfBirth; yearOfBirth < currentYear; yearOfBirth++) {
+   console.log(`в ${yearOfBirth + 1} вам было ${userAge} год`);
+   userAge++;
+}
